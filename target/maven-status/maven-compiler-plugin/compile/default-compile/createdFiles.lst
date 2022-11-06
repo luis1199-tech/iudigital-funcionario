@@ -1,0 +1,5 @@
+com\iudigital\exceptiones\funcionarios\controller\FuncionariosController.class
+com\iudigital\exceptiones\funcionarios\dao\FuncionariosDao.class
+com\iudigital\exceptiones\funcionarios\test\Main.class
+com\iudigital\exceptiones\funcionarios\dominio\Funcionarios.class
+com\iudigital\exceptiones\funcionarios\util\ConnectionUtil.class
