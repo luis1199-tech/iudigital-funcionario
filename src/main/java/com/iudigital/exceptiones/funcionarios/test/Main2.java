@@ -406,7 +406,7 @@ ex.printStackTrace();
     private void txtTelefono1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefono1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTelefono1ActionPerformed
-
+// configuracion del boton
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         
          if (txtIdentificacion.getText().trim().length() == 0) { //trim es para que no deje espacios
