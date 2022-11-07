@@ -4,6 +4,7 @@ import com.iudigital.exceptiones.funcionarios.controller.FuncionariosController;
 import com.iudigital.exceptiones.funcionarios.dominio.Funcionarios;
 import java.sql.SQLException;
 import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -66,7 +67,6 @@ public class Main2 extends javax.swing.JFrame {
                 defaultTableModel.setValueAt(funcionario.getFecha_nacimiento_fun(), row, 9);
                 defaultTableModel.setValueAt(funcionario.getId_pariente_fun(), row, 10);
                 defaultTableModel.setValueAt(funcionario.getId_identidad_fun(), row, 11);
-    
                 row++;
 
                 cbxFuncionario.addItem(funcionario);
@@ -79,7 +79,7 @@ ex.printStackTrace();
 }
     
 }
-
+//mostrar todos los funcionarios creados
  private void addListener() {
         cbxFuncionario.addItemListener(event -> {
             Funcionarios selectedFuncionario = (Funcionarios) event.getItem();
@@ -275,6 +275,11 @@ ex.printStackTrace();
         JPFuncionario2.add(TxtFamiliar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 120, -1));
 
         btnGuardar.setText("Guardar");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarActionPerformed(evt);
+            }
+        });
         JPFuncionario2.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, -1, -1));
 
         lblFamiliar2.setText("Numero identificacion del familiar");
@@ -401,6 +406,15 @@ ex.printStackTrace();
     private void txtTelefono1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefono1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtTelefono1ActionPerformed
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+        
+         if (txtIdentificacion.getText().trim().length() == 0) { //trim es para que no deje espacios
+            JOptionPane.showMessageDialog(null, "Digite el numero de identificacion"); // mostramos el mensaje si el campo está vacío
+            txtIdentificacion.requestFocus(); //nos deja el cursor sobre el campo que esta vacío
+            return;
+        }
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
     /**
      * @param args the command line arguments
