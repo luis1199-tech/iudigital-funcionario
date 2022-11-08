@@ -19,9 +19,11 @@ public class Main {
             
             
             System.out.println("Digite el nombre del funcionario");
-            String nombreFuncionario = sc.next();
+            String nombreFuncionario = sc.nextLine();
             System.out.println("Nombre del funcionario es:" + nombreFuncionario);
             System.out.println("---------------------------");
+            sc.next();
+            
             
             System.out.println("Digite el apellido del funcionario");
             String apellidoFuncionario = sc.nextLine();

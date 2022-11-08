@@ -414,8 +414,65 @@ ex.printStackTrace();
             txtIdentificacion.requestFocus(); //nos deja el cursor sobre el campo que esta vacío
             return;
         }
-    }//GEN-LAST:event_btnGuardarActionPerformed
+         
+         if (txtUniversity.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Codigo de la universidad IES");
+            txtUniversity.requestFocus();
+            return;
+        }
+         
+          if (txtName.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Digite Año");
+            txtName.requestFocus();
+            return;
+        }
 
+        if (txtApellido.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Digite El apellido del funcionario");
+            txtApellido.requestFocus();
+            return;
+        }
+
+        if (txtEstadocivil.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Digite el estado civil del funcionario");
+            txtEstadocivil.requestFocus();
+            return;
+        }
+        
+         if (txtSexo.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Digite el estado civil del funcionario");
+            txtSexo.requestFocus();
+            return;
+        }
+         
+          if (txtDireccion.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Digite el estado civil del funcionario");
+            txtDireccion.requestFocus();
+            return;
+        }
+          
+           if (txtTelefono1.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Digite el estado civil del funcionario");
+            txtTelefono1.requestFocus();
+            return;
+        }
+           
+            if (txtFecha.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Digite el estado civil del funcionario");
+            txtFecha.requestFocus();
+            return;
+        }
+            if (txtPariente.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Digite el estado civil del funcionario");
+            txtPariente.requestFocus();
+            return;       
+    }//GEN-LAST:event_btnGuardarActionPerformed
+        if (TxtFamiliar.getText().trim().length() == 0) {
+            JOptionPane.showMessageDialog(null, "Digite el estado civil del funcionario");
+            TxtFamiliar.requestFocus();
+            return;
+        }
+    }
     /**
      * @param args the command line arguments
      */
